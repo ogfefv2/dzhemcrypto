@@ -1,0 +1,252 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #1e1e1e;
+}
+
+.navbar-brand {
+    color: #4caf50;
+    font-size: 1.8rem;
+}
+
+.navbar-brand:hover {
+    color: #4caf50;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #4caf50;
+}
+
+.navbar-toggler {
+    border-color: #4caf50;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2846, 204, 113, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.collapse.show {
+    background-color: #1e1e1e;
+}
+
+
+
+.header {
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+
+
+
+
+.pricing-section {
+    padding: 40px 20px;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    min-height: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-content {
+    flex-grow: 1; 
+}
+
+.card-footer {
+    margin-top: 20px; 
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.pricing-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #32cd32;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pricing-card li {
+    margin: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-card li::before {
+    content: "✔";
+    color: #32cd32;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #32cd32;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #28a828;
+}
+
+
+
+h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-size: 1.8rem; 
+    color: #ffffff; 
+}
+
+
+
+
+.contact-form {
+    width: 90%; 
+    max-width: 700px; 
+    margin: 20px auto;
+    background-color: #1e1e1e; 
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #4caf50;
+    color: #ffffff;
+}
+
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.form-group input {
+    flex: 1; 
+    min-width: 100px; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    accent-color: #4caf50;
+    transform: scale(1.2);
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #4caf50, #388e3c);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #388e3c, #4caf50);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column; 
+    }
+
+    .form-group input {
+        width: 100%; 
+    }
+}
+
+.submit-btn .arrow {
+    font-size: 1.2rem;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #999;
+    font-size: 0.9rem;
+}
